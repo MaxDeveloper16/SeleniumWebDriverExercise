@@ -12,6 +12,13 @@ public class KeyboardAndMouseInput {
 
         driver.get("https://formy-project.herokuapp.com/keypress");
 
+        WebElement name = driver.findElement(By.id("name"));
+        name.click();
+        name.sendKeys("Max Kang");
+
+        WebElement button = driver.findElement(By.id("button"));
+        button.click();
+
         driver.quit();
     }
 }
