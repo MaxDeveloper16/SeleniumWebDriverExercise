@@ -12,8 +12,6 @@ public class Autocomplete  {
 
         driver.get("https://formy-project.herokuapp.com/autocomplete");
 
-        driver.get("https://formy-project.herokuapp.com/autocomplete");
-
         WebElement autocomplete = driver.findElement(By.id("autocomplete"));
         autocomplete.sendKeys("1555 Park Blvd, Palo Alto, CA");
         Thread.sleep(1000);
